@@ -126,6 +126,11 @@ export default function WalletInfoPage(){
 
     const createAndMintToken = async() => {
 
+        if(SOL === 0){
+            toast("Kindly Airdrop some Solana on Devnet to continue ! ");
+            return;
+        }
+
         if(!tokenName){
             toast("Token name is required ");
             return;
