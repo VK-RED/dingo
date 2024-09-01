@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Button } from "./ui/button";
 import { Dispatch, SetStateAction } from "react";
 import { toast } from "sonner";
@@ -54,9 +55,20 @@ export const Wallets = ({keysList,setPairs}:{keysList:Keys[],setPairs:Dispatch<S
                                     Wallet {ind+1}
                                 </h1>
 
-                                <Button variant={"destructive"} onClick={()=>deleteWallet(key.indexNo)}>
-                                    Delete
-                                </Button>
+                                <div className="flex space-x-8 items-center">
+
+                                    <Link className="transition-all duration-300 hover:border-b hover:border-black font-semibold leading-none"
+                                        href={`/${key.indexNo}/${key.publicKey}`}>
+                                        PUMP
+                                    </Link>
+
+                                    <Button variant={"destructive"} onClick={()=>deleteWallet(key.indexNo)}>
+                                        Delete
+                                    </Button>
+
+                                </div>
+
+                                
 
                             </div>
 
