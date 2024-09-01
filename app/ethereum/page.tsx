@@ -49,7 +49,7 @@ export default function Page(){
             <div className="flex flex-col items-center space-y-5">
                 {
                     list.map((l) => (
-                        <div className="flex flex-col items-center">
+                        <div className="flex flex-col items-center" key={l.publicKey}>
                             <p>Address : {l.address}</p>
                             <p>Public Key : {l.publicKey}</p>
                             <p>Secret Key : {l.secretKey}</p>
