@@ -18,12 +18,9 @@ export const Navbar = () => {
             
 
             <h2 className="mt-7 scroll-m-20 pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
-                Create your SOL wallet in seconds 
+                Create your SOL wallet in seconds and launch your Tokens !
             </h2>
 
-            <p className="text-xl text-muted-foreground">
-                {`Support For Ethereum Coming Soon !`}
-            </p>
         </div>
         
     )
