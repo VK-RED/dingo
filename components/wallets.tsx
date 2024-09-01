@@ -59,7 +59,7 @@ export const Wallets = ({keysList,setPairs}:{keysList:Keys[],setPairs:Dispatch<S
 
                                     <Link className="transition-all duration-300 hover:border-b hover:border-black font-semibold leading-none"
                                         href={`/${key.indexNo}/${key.publicKey}`}>
-                                        PUMP
+                                        PUMP TOKENS
                                     </Link>
 
                                     <Button variant={"destructive"} onClick={()=>deleteWallet(key.indexNo)}>
